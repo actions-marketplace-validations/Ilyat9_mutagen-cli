@@ -12,7 +12,14 @@ Full version (Russian): [README.md](README.md)
 ---
 
 <p align="center">
-  <img src="assets/demo.gif" alt="Real run: 3 bugs found in 1.4 seconds, $0.00 from cache" width="700">
+  <img src="assets/demo.gif" alt="Real run: 3 bugs found in 1.3 seconds, $0.00 from cache" width="700">
+</p>
+
+`--invent` turns survivors into tests — each suggestion is double-verified
+(passes on the real code, fails on the mutant):
+
+<p align="center">
+  <img src="assets/invent.gif" alt="--invent-apply: three surviving mutants, a verified test for each; the generated tests pass on the clean code" width="700">
 </p>
 
 mutagen-cli introduces realistic bugs into your code — off-by-one errors, missed

@@ -4,6 +4,20 @@ Entries tagged `[improvement]` were not in the plan — they are changes made on
 my own initiative because they cut a step, cut noise, cut time, or fixed an edge
 case that would otherwise have produced a wrong number.
 
+## Unreleased
+
+- **Added:** a second animated demo — `assets/invent.gif`, a VHS recording of
+  `mutagen run --invent-apply` against the polygon fixture: three survivors,
+  a verified catching test for each, then the generated tests passing on the
+  clean code.
+- **Changed:** both demos (`assets/demo.tape`, `assets/invent.tape`) are now
+  recorded fully offline via `scripts/record_demos.sh`. The old tape required
+  a one-time live run with a real API key to warm the cache by hand;
+  `scripts/demo.py` now builds the demo playground from the polygon fixture
+  and pre-seeds its LLM cache from `canned_mutants.json` (plus hand-written
+  `--invent` replies) and verifies the recorded command replays from cache —
+  no API key, no network, identical output on every re-recording.
+
 ## 0.1.6 — 2026-08-18
 
 - **Added:** `--classify-survivors` — a second LLM pass judges each surviving
